@@ -84,7 +84,7 @@ public class DEModules {
     public static final RegistryObject<ModuleItem<?>> ITEM_DRACONIC_SPEED                   = ITEMS.register("item_draconic_speed",                     () -> new ModuleItem<>(DRACONIC_SPEED));
     public static final RegistryObject<ModuleItem<?>> ITEM_CHAOTIC_SPEED                    = ITEMS.register("item_chaotic_speed",                      () -> new ModuleItem<>(CHAOTIC_SPEED));
 
-    public static final RegistryObject<Module<?>> DRACONIUM_DAMAGE                          = MODULES.register("draconium_damage",                      () -> new ModuleImpl<>(DAMAGE,                          DRACONIUM,              damageData(2)));
+    public static final RegistryObject<Module<?>> DRACONIUM_DAMAGE                          = MODULES.register("draconium_damage",                      () -> new ModuleImpl<>(DAMAGE,                          DRACONIUM,              damageData(2)).setMaxInstall(5));
     public static final RegistryObject<Module<?>> WYVERN_DAMAGE                             = MODULES.register("wyvern_damage",                         () -> new ModuleImpl<>(DAMAGE,                          WYVERN,                 damageData(4)));
     public static final RegistryObject<Module<?>> DRACONIC_DAMAGE                           = MODULES.register("draconic_damage",                       () -> new ModuleImpl<>(DAMAGE,                          DRACONIC,               damageData(8)));
     public static final RegistryObject<Module<?>> CHAOTIC_DAMAGE                            = MODULES.register("chaotic_damage",                        () -> new ModuleImpl<>(DAMAGE,                          CHAOTIC,                damageData(16)));
